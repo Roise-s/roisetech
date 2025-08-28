@@ -1,6 +1,7 @@
 import './App.css'
 import { Routes, Route } from "react-router";
 import Home from './pages/Home';
+import NotFound from './pages/404';
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="*" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   )
