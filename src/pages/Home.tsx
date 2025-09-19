@@ -1,3 +1,4 @@
+import ClientProjects from '@/components/ClientProjects'
 import Header from '@/components/Header'
 import MainSection from '@/components/MainSection'
 
@@ -6,6 +7,7 @@ const Home = () => {
     <>
         <Header />
         <MainSection />
+        <ClientProjects />
     </>
   )
 }
