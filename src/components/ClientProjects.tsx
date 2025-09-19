@@ -40,7 +40,7 @@ const ClientProjects = () => {
         {/* Mobile Device */}
         <figure className="hidden absolute bottom-0 start-0 z-2 max-w-full w-60 h-auto mb-20 ms-20 lg:block">
           <div className="p-1.5 rounded-3xl shadow-[0_2.75rem_5.5rem_-3.5rem_rgb(0_0_0_/_20%),_0_2rem_4rem_-2rem_rgb(0_0_0_/_30%),_inset_0_-0.1875rem_0.3125rem_0_rgb(0_0_0_/_20%)] bg-neutral-700">
-            <img className="max-w-full rounded-[1.25rem] h-auto" src="../assets/img/mockups/img9.jpg" alt="Features Image" />
+            <img className="max-w-full rounded-[1.25rem] h-auto" src="/client1of1.png" alt="Features Image" />
           </div>
         </figure>
         {/* End Mobile Device */}
@@ -57,7 +57,7 @@ const ClientProjects = () => {
           </div>
 
           <div className="bg-gray-800 rounded-b-lg">
-            <img className="max-w-full h-auto rounded-b-lg" src="../assets/img/mockups/img8.jpg" alt="Features Image" />
+            <img className="max-w-full h-auto rounded-b-lg" src="/client1.png" alt="Features Image" />
           </div>
         </figure>
         {/* End Browser Device */}
