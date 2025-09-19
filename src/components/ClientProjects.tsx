@@ -1,16 +1,5 @@
 
 const ClientProjects = () => {
-    let view: number = 1;
-
-    const handleClick = (value: number) => {
-        if (value == 1) {
-
-        } else if (value == 2) {
-
-        } else {
-
-        }
-    }
 
   return (
     <>
