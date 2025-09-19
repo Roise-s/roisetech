@@ -117,25 +117,25 @@ const ClientProjects = () => {
             <div className="max-w-[1140px] lg:pb-32 relative">
                 {/* Mobile Device */}
                 <figure className="hidden absolute bottom-0 start-0 z-2 max-w-full w-60 h-auto mb-20 ms-20 lg:block">
-                <div className="p-1.5 bg-gray-100 rounded-3xl shadow-[0_2.75rem_5.5rem_-3.5rem_rgb(45_55_75_/_20%),_0_2rem_4rem_-2rem_rgb(45_55_75_/_30%),_inset_0_-0.1875rem_0.3125rem_0_rgb(45_55_75_/_20%)] dark:shadow-[0_2.75rem_5.5rem_-3.5rem_rgb(0_0_0_/_20%),_0_2rem_4rem_-2rem_rgb(0_0_0_/_30%),_inset_0_-0.1875rem_0.3125rem_0_rgb(0_0_0_/_20%)] dark:bg-neutral-700">
-                    <img className="max-w-full rounded-[1.25rem] h-auto" src="../assets/img/mockups/img13.jpg" alt="Features Image" />
+                <div className="p-1.5 rounded-3xl shadow-[0_2.75rem_5.5rem_-3.5rem_rgb(45_55_75_/_20%),_0_2rem_4rem_-2rem_rgb(45_55_75_/_30%),_inset_0_-0.1875rem_0.3125rem_0_rgb(45_55_75_/_20%)] dark:shadow-[0_2.75rem_5.5rem_-3.5rem_rgb(0_0_0_/_20%),_0_2rem_4rem_-2rem_rgb(0_0_0_/_30%),_inset_0_-0.1875rem_0.3125rem_0_rgb(0_0_0_/_20%)] bg-neutral-700">
+                    <img className="max-w-full rounded-[1.25rem] h-auto" src="/client2of1.png" alt="Features Image" />
                 </div>
                 </figure>
                 {/* End Mobile Device */}
 
                 {/* Browser Device */}
-                <figure className="ms-auto me-20 relative z-1 max-w-full w-3xl h-auto shadow-[0_2.75rem_3.5rem_-2rem_rgb(45_55_75_/_20%),_0_0_5rem_-2rem_rgb(45_55_75_/_15%)] dark:shadow-[0_2.75rem_3.5rem_-2rem_rgb(0_0_0_/_20%),_0_0_5rem_-2rem_rgb(0_0_0_/_15%)] rounded-b-lg">
-                <div className="relative flex items-center max-w-3xl bg-white border-b border-gray-100 rounded-t-lg py-2 px-24 dark:bg-neutral-800 dark:border-neutral-700">
+                <figure className="ms-auto me-20 relative z-1 max-w-full w-3xl h-auto shadow-[0_2.75rem_3.5rem_-2rem_rgb(0_0_0_/_20%),_0_0_5rem_-2rem_rgb(0_0_0_/_15%)] rounded-b-lg">
+                <div className="relative flex items-center max-w-3xl border-b rounded-t-lg py-2 px-24 bg-neutral-800 border-neutral-700">
                     <div className="flex gap-x-1 absolute top-2/4 start-4 -translate-y-1">
-                    <span className="size-2 bg-gray-200 rounded-full dark:bg-neutral-700"></span>
-                    <span className="size-2 bg-gray-200 rounded-full dark:bg-neutral-700"></span>
-                    <span className="size-2 bg-gray-200 rounded-full dark:bg-neutral-700"></span>
+                    <span className="size-2 bg-neutral-700"></span>
+                    <span className="size-2 bg-neutral-700"></span>
+                    <span className="size-2 bg-neutral-700"></span>
                     </div>
-                    <div className="flex justify-center items-center size-full bg-gray-200 text-[.25rem] text-gray-800 rounded-sm sm:text-[.5rem] dark:bg-neutral-700 dark:text-neutral-200">www.preline.co</div>
+                    <div className="flex justify-center items-center size-full text-[.25rem] rounded-sm sm:text-[.5rem] bg-neutral-700 text-neutral-200">www.roisetech.com</div>
                 </div>
 
                 <div className="bg-gray-800 rounded-b-lg">
-                    <img className="max-w-full h-auto rounded-b-lg" src="../assets/img/mockups/img12.jpg" alt="Features Image" />
+                    <img className="max-w-full h-auto rounded-b-lg" src="/client2.png" alt="Features Image" />
                 </div>
                 </figure>
                 {/* End Browser Device */}

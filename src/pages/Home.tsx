@@ -1,4 +1,5 @@
 import ClientProjects from '@/components/ClientProjects'
+import FAQ from '@/components/FAQ'
 import Header from '@/components/Header'
 import MainSection from '@/components/MainSection'
 
@@ -8,6 +9,7 @@ const Home = () => {
         <Header />
         <MainSection />
         <ClientProjects />
+        <FAQ />
     </>
   )
 }
