@@ -100,7 +100,7 @@ const ClientProjects = () => {
                     <span className="size-2 bg-gray-700 rounded-full"></span>
                     <span className="size-2 bg-gray-700 rounded-full"></span>
                     </div>
-                    <div className="flex justify-center items-center size-full bg-gray-700 text-[.25rem] sm:text-[.5rem] text-gray-200 rounded-sm">www.preline.co</div>
+                    <div className="flex justify-center items-center size-full bg-gray-700 text-[.25rem] sm:text-[.5rem] text-gray-200 rounded-sm">www.roisetech.com</div>
                 </div>
 
                 <div className="bg-gray-800 rounded-b-lg">
