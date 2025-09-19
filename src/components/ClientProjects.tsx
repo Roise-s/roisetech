@@ -4,7 +4,7 @@ const ClientProjects = () => {
   return (
     <>
       {/* Features */}
-        <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div className="max-w-[85rem] mt-[20px] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         {/* Tab Nav */}
         <nav className="max-w-6xl mx-auto flex flex-col sm:flex-row gap-y-px sm:gap-y-0 sm:gap-x-4" aria-label="Tabs" role="tablist" aria-orientation="horizontal">
             <button type="button" className="hs-tab-active:bg-gray-100 hs-tab-active:hover:border-transparent w-full flex flex-col text-start focus:outline-hidden p-3 md:p-5 rounded-xl hs-tab-active:bg-neutral-800 hover:bg-neutral-800 focus:bg-neutral-800 active" id="tabs-with-card-item-1" aria-selected="true" data-hs-tab="#tabs-with-card-1" aria-controls="tabs-with-card-1" role="tab">
