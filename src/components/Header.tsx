@@ -1,4 +1,4 @@
-import { Link, Element } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const Header = () => {
   return (
@@ -31,7 +31,9 @@ const Header = () => {
         <div className="flex flex-col md:flex-row md:items-center md:justify-end gap-y-3 py-2 md:py-0 md:ps-7">
             <a className="pe-3 ps-px sm:px-3 md:py-4 text-sm text-white hover:text-neutral-300 focus:outline-hidden focus:text-neutral-300" href="/" aria-current="page">Home</a>
             <a className="pe-3 ps-px sm:px-3 md:py-4 text-sm text-white hover:text-neutral-300 focus:outline-hidden focus:text-neutral-300" href="https://kgaugelo.vercel.app/" target='_blank'>Experience</a>
-            <a className="pe-3 ps-px sm:px-3 md:py-4 text-sm text-white hover:text-neutral-300 focus:outline-hidden focus:text-neutral-300" href="#">Client's projects</a>
+            <Link to="Client" smooth={true} duration={500}>   
+                <p className="pe-3 ps-px sm:px-3 md:py-4 text-sm text-white hover:text-neutral-300 focus:outline-hidden focus:text-neutral-300">Client's projects</p>
+            </Link>
         </div>
         </div>
         {/* End Collapse */}
