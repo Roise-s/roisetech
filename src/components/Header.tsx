@@ -32,7 +32,7 @@ const Header = () => {
             <a className="pe-3 ps-px sm:px-3 md:py-4 text-sm text-white hover:text-neutral-300 focus:outline-hidden focus:text-neutral-300" href="/" aria-current="page">Home</a>
             <a className="pe-3 ps-px sm:px-3 md:py-4 text-sm text-white hover:text-neutral-300 focus:outline-hidden focus:text-neutral-300" href="https://kgaugelo.vercel.app/" target='_blank'>Experience</a>
             <Link to="Client" smooth={true} duration={500}>   
-                <p className="pe-3 ps-px sm:px-3 md:py-4 text-sm text-white hover:text-neutral-300 focus:outline-hidden focus:text-neutral-300">Client's projects</p>
+                <p className="pe-3 ps-px cursor-pointer sm:px-3 md:py-4 text-sm text-white hover:text-neutral-300 focus:outline-hidden focus:text-neutral-300">Client's projects</p>
             </Link>
         </div>
         </div>
