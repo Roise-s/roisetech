@@ -1,6 +1,11 @@
+import { useState } from "react";
 
 const ClientProjects = () => {
+    const [active, setActive] = useState(true);
+
     const handleClick = (value: number) => {
+        setActive(false);
+
         if (value === 1) {
             document.getElementById("tabs-with-card-1")?.classList.remove("hidden");
             document.getElementById("tabs-with-card-2")?.classList.add("hidden");
@@ -22,7 +27,7 @@ const ClientProjects = () => {
         <div id="Client" className="max-w-[85rem] mt-[20px] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         {/* Tab Nav */}
         <nav className="max-w-6xl mx-auto flex flex-col sm:flex-row gap-y-px sm:gap-y-0 sm:gap-x-4" aria-label="Tabs" role="tablist" aria-orientation="horizontal">
-            <button onClick={() => handleClick(1)} type="button" className="hs-tab-active:bg-gray-100 cursor-pointer hs-tab-active:hover:border-transparent w-full flex flex-col text-start focus:outline-hidden p-3 md:p-5 rounded-xl hs-tab-active:bg-neutral-800 hover:bg-neutral-800 focus:bg-neutral-800 active" id="tabs-with-card-item-1" aria-selected="true" data-hs-tab="#tabs-with-card-1" aria-controls="tabs-with-card-1" role="tab">
+            <button onClick={() => handleClick(1)} type="button" className={active ? "hs-tab-active:bg-gray-100 cursor-pointer hs-tab-active:hover:border-transparent w-full flex flex-col text-start focus:outline-hidden p-3 md:p-5 rounded-xl hs-tab-active:bg-neutral-800 hover:bg-neutral-800 bg-neutral-800 focus:bg-neutral-800 active" : "hs-tab-active:bg-gray-100  cursor-pointer hs-tab-active:hover:border-transparent w-full flex flex-col text-start focus:outline-hidden p-3 md:p-5 rounded-xl hs-tab-active:bg-neutral-800 hover:bg-neutral-800 focus:bg-neutral-800 active"} id="tabs-with-card-item-1" aria-selected="true" data-hs-tab="#tabs-with-card-1" aria-controls="tabs-with-card-1" role="tab">
             <svg className="shrink-0 hidden sm:block size-7 hs-tab-active:text-blue-600 hs-tab-active:text-blue-500 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg>
             <span className="sm:mt-5">
                 <span className="hs-tab-active:text-blue-600 block font-semibold  hs-tab-active:text-blue-500 text-neutral-200">Business Websites</span>
