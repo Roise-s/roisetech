@@ -10,7 +10,7 @@ const MainSection = () => {
                 </h1>
 
                 <p className="mt-4 text-base text-pretty sm:text-lg/relaxed text-gray-200">
-                    From design to development, we create digital spaces that reflect who you are, what you do, and the story you want the world to see.
+                    From design to development, I create digital spaces that reflect who you are, what you do, and the story you want the world to see.
                 </p>
 
                 <div className="mt-4 flex justify-center gap-4 sm:mt-6">
@@ -25,7 +25,7 @@ const MainSection = () => {
                     className="inline-block rounded border px-5 py-3 font-medium shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 border-gray-700 text-gray-200 dark:hover:bg-gray-800 dark:hover:text-white"
                     href="#"
                     >
-                    Learn More
+                    Laptop repairs
                     </a>
                 </div>
             </div>
