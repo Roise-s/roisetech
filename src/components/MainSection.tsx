@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 
 const MainSection = () => {
   return (
@@ -14,12 +15,14 @@ const MainSection = () => {
                 </p>
 
                 <div className="mt-4 flex justify-center gap-4 sm:mt-6">
-                    <a
-                    className="inline-block rounded border border-indigo-600 bg-indigo-600 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-indigo-700"
-                    href="#"
-                    >
-                    Get Started
-                    </a>
+                    <Link to="Client" smooth={true} duration={500}>
+                        <p
+                        className="inline-block cursor-pointer rounded border border-indigo-600 bg-indigo-600 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-indigo-700"
+                        >
+                        Get Started
+                        </p>
+                    </Link>
+                    
 
                     <a
                     className="inline-block rounded border px-5 py-3 font-medium shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 border-gray-700 text-gray-200 dark:hover:bg-gray-800 dark:hover:text-white"
