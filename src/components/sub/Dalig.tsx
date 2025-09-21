@@ -12,11 +12,44 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
+import { useState } from "react"
+
 
 export function DialogDemo() {
+    const [result, setResult] = useState("Send Message");
+
+
+    const onSubmit = async (event: React.FormEvent<HTMLFormElement>): Promise<void> => {
+        event.preventDefault();
+        setResult("Sending...");
+
+        const formData = new FormData(event.currentTarget);
+        formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData,
+            });
+
+            const data: { success: boolean; message: string } = await response.json();
+
+            if (data.success) {
+            setResult("Form Submitted Successfully");
+            event.currentTarget.reset();
+            } else {
+            console.error("Error", data);
+            setResult(data.message);
+            }
+        } catch (error) {
+            console.error("Fetch error:", error);
+            setResult("Something went wrong. Please try again.");
+        }
+    };
+
+
   return (
     <Dialog>
-      <form>
         <DialogTrigger asChild>
           <button className="group cursor-pointer inline-flex items-center gap-x-2 py-2 px-3 bg-[#ff0] font-medium text-sm text-nowrap text-neutral-800 rounded-full focus:outline-hidden">Get a quote</button>
         </DialogTrigger>
@@ -27,6 +60,7 @@ export function DialogDemo() {
                 Let’s bring your ideas to life, drop me a message and I’ll get back to you as soon as I can!
             </DialogDescription>
           </DialogHeader>
+        <form onSubmit={onSubmit}>
           <div className="grid gap-4">
             <div className="grid gap-3">
               <Label htmlFor="name-1">Your Name</Label>
@@ -49,10 +83,10 @@ export function DialogDemo() {
             <DialogClose asChild>
               <Button variant="outline">Cancel</Button>
             </DialogClose>
-            <Button type="submit">Save changes</Button>
+            <Button type="submit">{result}</Button>
           </DialogFooter>
+          </form>
         </DialogContent>
-      </form>
     </Dialog>
   )
 }
