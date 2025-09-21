@@ -17,6 +17,7 @@ import { useState } from "react"
 
 export function DialogDemo() {
     const [result, setResult] = useState("Send Message");
+    const accessKey = import.meta.env.VITE_ACCESS_KEY;
 
 
     const onSubmit = async (event: React.FormEvent<HTMLFormElement>): Promise<void> => {
@@ -24,7 +25,7 @@ export function DialogDemo() {
         setResult("Sending...");
 
         const formData = new FormData(event.currentTarget);
-        formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+        formData.append("access_key", accessKey);
 
         try {
             const response = await fetch("https://api.web3forms.com/submit", {
