@@ -1,4 +1,5 @@
 import { Link } from 'react-scroll';
+import { DialogDemo } from './sub/Dalig';
 
 const Header = () => {
   return (
@@ -19,9 +20,7 @@ const Header = () => {
         {/* Button Group */}
         <div className="md:order-3 flex items-center gap-x-3">
         <div className="md:ps-3">
-            <a className="group inline-flex items-center gap-x-2 py-2 px-3 bg-[#ff0] font-medium text-sm text-nowrap text-neutral-800 rounded-full focus:outline-hidden" href="#">
-                Get a quote
-            </a>
+                <DialogDemo /> 
         </div>
         </div>
         {/* End Button Group */}
