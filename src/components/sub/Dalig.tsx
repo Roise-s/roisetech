@@ -19,9 +19,11 @@ export function DialogDemo() {
     const [result, setResult] = useState("Send Message");
     const accessKey = import.meta.env.VITE_ACCESS_KEY;
 
-
     const onSubmit = async (event: React.FormEvent<HTMLFormElement>): Promise<void> => {
         event.preventDefault();
+
+        const form = event.currentTarget as HTMLFormElement;
+
         setResult("Sending...");
 
         const formData = new FormData(event.currentTarget);
@@ -37,7 +39,7 @@ export function DialogDemo() {
 
             if (data.success) {
             setResult("Form Submitted Successfully");
-            event.currentTarget.reset();
+            form.reset();
             } else {
             console.error("Error", data);
             setResult(data.message);
