@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer"
+import TAndCFooter from "@/components/TAndCFooter"
 
 const TermsAndConditions = () => {
   return (
@@ -52,6 +54,9 @@ const TermsAndConditions = () => {
                 </div>
             </div>
         </div>
+
+        <TAndCFooter />
+        <Footer />
     </section>
   )
 }
