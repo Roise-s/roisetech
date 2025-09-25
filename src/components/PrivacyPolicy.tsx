@@ -1,78 +1,76 @@
+import Footer from "./Footer";
 
 const PrivacyPolicy = () => {
-  return (
-    <section className="bg-gray-900">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-            <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-white">Privacy Policy</h2>
-            <div className="grid pt-8 text-left border-t md:gap-16 border-gray-700 md:grid-cols-2">
-                <div>
-                    <div className="mb-10">
-                        <h3 className="flex items-center mb-4 text-lg font-medium text-white">
-                            <svg className="flex-shrink-0 mr-2 w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-                            What do you mean by "Figma assets"?
-                        </h3>
-                        <p className="text-gray-400">You will have access to download the full Figma project including all of the pages, the components, responsive pages, and also the icons, illustrations, and images included in the screens.</p>
-                    </div>
-                    <div className="mb-10">                        
-                        <h3 className="flex items-center mb-4 text-lg font-medium text-white">
-                            <svg className="flex-shrink-0 mr-2 w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-                            What does "lifetime access" exactly mean?
-                        </h3>
-                        <p className="text-gray-400">Once you have purchased either the design, code, or both packages, you will have access to all of the future updates based on the roadmap, free of charge.</p>
-                    </div>
-                    <div className="mb-10">
-                        <h3 className="flex items-center mb-4 text-lg font-medium text-white">
-                            <svg className="flex-shrink-0 mr-2 w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-                            How does support work?
-                        </h3>
-                        <p className="text-gray-400">We're aware of the importance of well qualified support, that is why we decided that support will only be provided by the authors that actually worked on this project.</p>
-                        <p className="text-gray-400">Feel free to <a href="#" className="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline" target="_blank" rel="noreferrer">contact us</a> and we'll help you out as soon as we can.</p>
-                    </div>
-                    <div className="mb-10">
-                        <h3 className="flex items-center mb-4 text-lg font-medium text-white">
-                            <svg className="flex-shrink-0 mr-2 w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-                            I want to build more than one project. Is that allowed?
-                        </h3>
-                        <p className="text-gray-400">You can use Windster for an unlimited amount of projects, whether it's a personal website, a SaaS app, or a website for a client. As long as you don't build a product that will directly compete with Windster either as a UI kit, theme, or template, it's fine.</p>
-                        <p className="text-gray-400">Find out more information by <a href="#" className="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline">reading the license</a>.</p>
-                    </div>
-                </div>
-                <div>
-                    <div className="mb-10">
-                        <h3 className="flex items-center mb-4 text-lg font-medium text-white">
-                            <svg className="flex-shrink-0 mr-2 w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-                            What do you mean by "Figma assets"?
-                        </h3>
-                        <p className="text-gray-400">You will have access to download the full Figma project including all of the pages, the components, responsive pages, and also the icons, illustrations, and images included in the screens.</p>
-                    </div>
-                    <div className="mb-10">                        
-                        <h3 className="flex items-center mb-4 text-lg font-medium text-white">
-                            <svg className="flex-shrink-0 mr-2 w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-                            What does "lifetime access" exactly mean?
-                        </h3>
-                        <p className="text-gray-400">Once you have purchased either the design, code, or both packages, you will have access to all of the future updates based on the roadmap, free of charge.</p>
-                    </div>
-                    <div className="mb-10">
-                        <h3 className="flex items-center mb-4 text-lg font-medium text-white">
-                            <svg className="flex-shrink-0 mr-2 w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-                            How does support work?
-                        </h3>
-                        <p className="text-gray-400">We're aware of the importance of well qualified support, that is why we decided that support will only be provided by the authors that actually worked on this project.</p>
-                        <p className="text-gray-400">Feel free to <a href="#" className="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline" target="_blank" rel="noreferrer">contact us</a> and we'll help you out as soon as we can.</p>
-                    </div>
-                    <div className="mb-10">
-                        <h3 className="flex items-center mb-4 text-lg font-medium text-white">
-                            <svg className="flex-shrink-0 mr-2 w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-                            I want to build more than one project. Is that allowed?
-                        </h3>
-                        <p className="text-gray-400">You can use Windster for an unlimited amount of projects, whether it's a personal website, a SaaS app, or a website for a client. As long as you don't build a product that will directly compete with Windster either as a UI kit, theme, or template, it's fine.</p>
-                        <p className="text-gray-400">Find out more information by <a href="#" className="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline">reading the license</a>.</p>
-                    </div>
-                </div>
+
+    const faqsList = [
+        {
+            q: "Information I Collect",
+            a: "I may collect the following types of information: Personal information you provide voluntarily, such as your name, email address, phone number, and any messages or content submitted through forms. Technical information automatically collected when you visit the website, including your IP address, browser type, operating system, and pages visited."
+        },
+        {
+            q: "How I Use Your Information",
+            a: "Your information is used to: Respond to inquiries and provide services you request. Send updates or information about services (if you opt in). Improve my website, services, and user experience. Comply with legal obligations."
+        },
+        {
+            q: "Sharing Your Information",
+            a: "I do not sell, rent, or trade your personal information to third parties. I may share your information with trusted service providers who help me operate the website or provide services, but only to the extent necessary. I may disclose information if required by law or to protect my rights and property."
+        },
+        {
+            q: "Data Security",
+            a: "I take reasonable measures to protect your personal information from unauthorized access, disclosure, or alteration. While I strive to keep your data secure, no method of transmission or storage is completely secure."
+        },
+        {
+            q: "Retention of Data",
+            a: "I retain personal information only as long as necessary to provide services or comply with legal obligations. When no longer needed, your data will be securely deleted or anonymized."
+        },
+        {
+            q: "Your Rights",
+            a: "You have the right to: Request access to the personal information I hold about you. Request correction or deletion of your personal information. Opt-out of marketing communications at any time."
+        }, 
+        {
+            q: "Children’s Privacy",
+            a: "This website and services are not intended for children under 13. I do not knowingly collect personal information from children."
+        },
+        {
+            q: "Updates to This Policy",
+            a: "I may update this Privacy Policy from time to time. Changes will be posted on this page with the “Last updated” date."
+        },
+        {
+            q: "Contact Me",
+            a: "If you have questions or concerns about this Privacy Policy or how your data is handled, you can contact me at milkeyroise@gmail.com"
+        },        
+    ]
+  
+    return (
+        <section className="leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8">
+            <div className="space-y-3 text-center">
+                <h1 className="text-3xl text-gray-300 font-semibold">
+                    Privacy Policy
+                </h1>
+                <p className="text-gray-400 mx-auto text-lg">
+                    Roise Tech values your privacy. This Privacy Policy explains how I collect, use, and protect your personal information when you visit my website or use my services. By using this website, you agree to the terms described here.
+                </p>
             </div>
-        </div>
-    </section>
-  )
+            <div className="mt-14 mb-36 gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-3">
+                {
+                    faqsList.map((item, idx) => (
+                        <div 
+                            className="space-y-3 mt-5"
+                            key={idx}
+                        >
+                            <h4 className="text-xl text-gray-300 font-medium">
+                                {item.q}
+                            </h4>
+                            <p className="text-gray-500">
+                                {item.a}
+                            </p>
+                        </div>
+                    ))
+                }
+            </div>
+            <Footer />
+        </section>
+    )
 }
 
-export default PrivacyPolicy
+export default PrivacyPolicy;
