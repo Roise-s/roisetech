@@ -110,13 +110,13 @@ const Footer = () => {
                     </li>
 
                     <li>
-                    <a href="#" className="transition hover:opacity-75 text-gray-200">
+                    <a href="/laptop-repairs" className="transition hover:opacity-75 text-gray-200">
                         Laptop's and PC Repairs
                     </a>
                     </li>
 
                     <li>
-                    <a href="#" className="transition hover:opacity-75 text-gray-200">
+                    <a href="/laptop-repairs" className="transition hover:opacity-75 text-gray-200">
                         Laptop and PC Builds
                     </a>
                     </li>

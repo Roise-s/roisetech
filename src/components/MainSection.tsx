@@ -26,7 +26,7 @@ const MainSection = () => {
 
                     <a
                     className="inline-block rounded border px-5 py-3 font-medium shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 border-gray-700 text-gray-200 dark:hover:bg-gray-800 dark:hover:text-white"
-                    href="#"
+                    href="/laptop-repairs"
                     >
                     Laptop repairs
                     </a>
