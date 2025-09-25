@@ -1,4 +1,5 @@
 import Footer from "./Footer";
+import Header from "./Header";
 
 const PrivacyPolicy = () => {
 
@@ -42,34 +43,38 @@ const PrivacyPolicy = () => {
     ]
   
     return (
-        <section className="leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8">
-            <div className="space-y-3 text-center">
-                <h1 className="text-3xl text-gray-300 font-semibold">
-                    Privacy Policy
-                </h1>
-                <p className="text-gray-400 mx-auto text-lg">
-                    Roise Tech values your privacy. This Privacy Policy explains how I collect, use, and protect your personal information when you visit my website or use my services. By using this website, you agree to the terms described here.
-                </p>
-            </div>
-            <div className="mt-14 mb-36 gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-3">
-                {
-                    faqsList.map((item, idx) => (
-                        <div 
-                            className="space-y-3 mt-5"
-                            key={idx}
-                        >
-                            <h4 className="text-xl text-gray-300 font-medium">
-                                {item.q}
-                            </h4>
-                            <p className="text-gray-500">
-                                {item.a}
-                            </p>
-                        </div>
-                    ))
-                }
-            </div>
+        <>
+            <Header />
+            <section className="leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8">
+                <div className="space-y-3 text-center">
+                    <h1 className="text-3xl text-gray-300 font-semibold">
+                        Privacy Policy
+                    </h1>
+                    <p className="text-gray-400 mx-auto text-lg">
+                        Roise Tech values your privacy. This Privacy Policy explains how I collect, use, and protect your personal information when you visit my website or use my services. By using this website, you agree to the terms described here.
+                    </p>
+                </div>
+                <div className="mt-14 mb-36 gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-3">
+                    {
+                        faqsList.map((item, idx) => (
+                            <div 
+                                className="space-y-3 mt-5"
+                                key={idx}
+                            >
+                                <h4 className="text-xl text-gray-300 font-medium">
+                                    {item.q}
+                                </h4>
+                                <p className="text-gray-500">
+                                    {item.a}
+                                </p>
+                            </div>
+                        ))
+                    }
+                </div>
+            </section>
             <Footer />
-        </section>
+        </>
+        
     )
 }
 
