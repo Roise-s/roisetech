@@ -158,11 +158,6 @@ const Footer = () => {
                     </a>
                 </li>
 
-                <li>
-                    <a href="#" className="transition hover:opacity-75 text-gray-400">
-                    Cookies
-                    </a>
-                </li>
                 </ul>
 
                 <p className="mt-8 text-xs sm:mt-0 text-gray-400">
