@@ -153,7 +153,7 @@ const Footer = () => {
                 </li>
 
                 <li>
-                    <a href="#" className="transition hover:opacity-75 text-gray-400">
+                    <a href="/privacy-policy" className="transition hover:opacity-75 text-gray-400">
                     Privacy Policy
                     </a>
                 </li>
