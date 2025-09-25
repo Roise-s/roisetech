@@ -98,13 +98,13 @@ const Footer = () => {
 
                 <ul className="mt-6 space-y-4 text-sm">
                     <li>
-                    <a href="#" className="transition hover:opacity-75 text-gray-200">
+                    <a href="/" className="transition hover:opacity-75 text-gray-200">
                         Web Development
                     </a>
                     </li>
 
                     <li>
-                    <a href="#" className="transition hover:opacity-75 text-gray-200">
+                    <a href="/" className="transition hover:opacity-75 text-gray-200">
                         Android and iOS Development
                     </a>
                     </li>
@@ -128,14 +128,8 @@ const Footer = () => {
 
                 <ul className="mt-6 space-y-4 text-sm">
                     <li>
-                    <a href="#" className="transition hover:opacity-75 text-gray-200">
+                    <a href="https://kgaugelo.vercel.app/" className="transition hover:opacity-75 text-gray-200">
                         About Roise
-                    </a>
-                    </li>
-
-                    <li>
-                    <a href="#" className="transition hover:opacity-75 text-gray-200">
-                        Contact Us
                     </a>
                     </li>
                 </ul>
