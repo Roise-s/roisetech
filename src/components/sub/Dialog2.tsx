@@ -54,32 +54,39 @@ export function DialogTwo() {
   return (
     <Dialog>
         <DialogTrigger asChild>
-          <button className="group cursor-pointer inline-flex items-center gap-x-2 py-2 px-3 bg-[#ff0] font-medium text-sm text-nowrap text-neutral-800 rounded-full focus:outline-hidden">Get repairs</button>
+          <button className="inline-flex items-center cursor-pointer justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-gray-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-900">
+            Get repairs
+            <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
-            <DialogTitle>Get in Touch</DialogTitle>
+            <DialogTitle>Get in Touch With Me</DialogTitle>
             <DialogDescription>
-                Let’s bring your ideas to life, drop me a message and I’ll get back to you as soon as I can!
+                Have a laptop issue? Send me the details and we'll get back to you as soon as possible.
             </DialogDescription>
           </DialogHeader>
         <form onSubmit={onSubmit}>
           <div className="grid gap-4">
             <div className="grid gap-3">
-              <Label htmlFor="name-1">Your Name</Label>
-              <Input id="name-1" name="name" placeholder="Sarah Johnson" />
+              <Label htmlFor="name-1">Full Name</Label>
+              <Input id="name-1" name="Full Name" placeholder="Sarah Johnson" />
             </div>
             <div className="grid gap-3">
-              <Label htmlFor="username-1">Your Email</Label>
-              <Input id="username-1" name="email" placeholder="sarah@email.com" />
+              <Label htmlFor="username-1">Email Address</Label>
+              <Input id="username-1" name="Email Address" placeholder="sarah@email.com" />
             </div>
             <div className="grid gap-3">
-              <Label htmlFor="username-1">Business / Brand Name</Label>
-              <Input id="username-1" name="business name" placeholder="e.g. Johnson’s Bakery" />
+              <Label htmlFor="username-1">Phone Number</Label>
+              <Input id="username-1" name="Phone Number" placeholder="e.g. +27 710 502 8649" />
             </div>
             <div className="grid gap-3">
-              <Label htmlFor="username-1">Message</Label>
-              <Textarea id="username-1" name="message" placeholder="Tell me a little about what you’re looking for..." />
+              <Label htmlFor="username-1">Device Type / Model</Label>
+              <Input id="username-1" name="Device Type" placeholder="e.g. MacBook Pro 13-inch 2020" />
+            </div>
+            <div className="grid gap-3">
+              <Label htmlFor="username-1">Problem Description</Label>
+              <Textarea id="username-1" className="mb-1.5" name="Problem Description" placeholder="Describe the issue with your laptop (be as detailed as possible)" />
             </div>
           </div>
           <DialogFooter>
