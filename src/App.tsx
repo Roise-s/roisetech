@@ -5,6 +5,7 @@ import NotFound from './pages/404';
 import TermsAndConditions from './pages/TermsAndConditions';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import LaptopRepairs from './components/LaptopRepairs';
+import WorkingOnIt from './components/WorkingOnIt';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/terms-of-service" element={<TermsAndConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/laptop-repairs" element={<LaptopRepairs />} />
+        <Route path="/ViewStore" element={<WorkingOnIt />} />
       </Routes>
     </>
   )

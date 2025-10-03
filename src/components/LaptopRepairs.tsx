@@ -14,7 +14,7 @@ const LaptopRepairs = () => {
                     <span>
                         <DialogTwo />
                     </span>
-                    <a href="#" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center border rounded-lg focus:ring-4 text-white border-gray-700 hover:bg-gray-700 focus:ring-gray-800">
+                    <a href="/ViewStore" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center border rounded-lg focus:ring-4 text-white border-gray-700 hover:bg-gray-700 focus:ring-gray-800">
                         View Store
                     </a> 
                 </div>
