@@ -86,7 +86,7 @@ export function DialogTwo() {
             </div>
             <div className="grid gap-3">
               <Label htmlFor="username-1">Problem Description</Label>
-              <Textarea id="username-1" className="mb-1.5" name="Problem Description" placeholder="Describe the issue with your laptop (be as detailed as possible)" />
+              <Textarea id="username-1" className="mb-1.5 " name="Problem Description" placeholder="Describe the issue with your laptop (be as detailed as possible)" />
             </div>
           </div>
           <DialogFooter>
